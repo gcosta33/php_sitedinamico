@@ -57,7 +57,7 @@ nav {
 
 }
 nav.mobile{
-    display: none;   
+    display: none;
 }
 nav .botao-menu-mobile{
     font-size: 30px;
@@ -75,11 +75,14 @@ nav.mobile ul{
     text-align: center;
     font-size: 17px;
     font-weight: 300;
-    padding: 8px 0;
+}
+nav.mobile li:hover{
+    background: rgba(153, 153, 153, 0.527);
 }
 nav.mobile li a{
     display: block;
     text-decoration: none;
+    padding: 8px 0;
 }
 nav.desktop li{
     display: inline-block;
@@ -260,7 +263,7 @@ footer p{
     nav.mobile{
         display:block
     }
-    nav.ul{
+    nav.mobile ul{
         display: none;
     }
 }

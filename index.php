@@ -247,5 +247,7 @@
 			<p>Todos os direitos reservados</p>
 		</div>
 	</footer>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+	<script src="js/scripts.js" ></script>
 </body>
 </html>
