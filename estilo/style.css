@@ -20,7 +20,8 @@ img{
     margin: 0 auto;
 }
 .w33{
-    width: 33.3%
+    width: 33.3%;
+    padding: 0 10px;
 }
 .w50{
     padding: 0 1%;
@@ -158,18 +159,80 @@ section.descricao-autor p{
     color: #444;
     margin-top: 10px;
 }
-
-/* REGRAS RESPONSIVO */
-@media screen and (max-width: 700px){
-    nav.desktop{
-        display: none;
-    }
-    
-    nav.mobile{
-        display:block
-    }
+section.especialidades {
+    padding: 40px 0;
+    background: #E2E2E2;
 }
-
+section.especialidades h2.title{
+    font-size: 30px;
+    font-weight: 400;
+    color: #999;
+    text-align: center;
+}
+.box-expecialidades {
+    margin: 40px 0;
+    text-align: center;
+}
+.box-expecialidades h3:nth-child(1n){
+    color: #404580;
+    font-size: 40px;
+}
+.box-expecialidades h3:nth-child(2n){
+    color: #b9cbff;
+    font-weight: 300;
+    font-size: 25px;
+}
+.box-expecialidades p{
+    font-size: 15px;
+    color: #272b52;
+    margin: 10px;
+}
+section.extras {
+    padding: 30px 0;
+    background: #404580;
+    color: white
+}
+.container-depoimentos,.container-servicos {
+    padding: 0 50px;
+}
+section.extras .title{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.depoimento-single {
+    padding: 15px 0;
+    border-bottom: 1px solid #5056A0;
+}
+p.depoimento-descricao {
+    font-size: 15px;
+    font-weight: 300;
+}
+p.nome-autor{
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+div.servicos ul{
+    margin: 20px 0;
+    list-style-position: inside;
+}
+div.servicos li{
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+footer {
+    background: #313462;
+    padding: 30px 0;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px
+}
+/* REGRAS RESPONSIVO */
 @media screen and (max-width: 768px){
     img{
         float: none !important;
@@ -179,5 +242,25 @@ section.descricao-autor p{
     .w50{
         padding: 20px;
         width: 100%;
+    }
+    .w33{
+        width: 100%;
+        padding: 20px;
+    }
+    .box-expecialidades{
+        padding: 40px 20px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 700px){
+    nav.desktop{
+        display: none;
+    }
+    
+    nav.mobile{
+        display:block
+    }
+    nav.ul{
+        display: none;
     }
 }
