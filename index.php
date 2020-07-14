@@ -1,11 +1,12 @@
+<?php include('config.php');?>
 <!DOCTYPE html>
 <html lang="p">
 
 <head>
 	<title>Projeto 01</title>
-	<link href="estilo/all.css" rel="stylesheet"> <!--load all styles -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="estilo/style.css">
+	<link href="<?php echo INCLUDE_PATH; ?>estilo/all.css" rel="stylesheet"> <!--load all styles -->
+	<link href="<?php echo INCLUDE_PATH; ?>https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>estilo/style.css">
 	<meta charsert="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content="palvras, chaves do, meu, site">
@@ -15,15 +16,18 @@
 <body>
 	<header>
 		<div class="center">
-
-			<div class="logo left"><i class="fab fa-gg-circle"></i></div>
+			<div class="logo left">
+				<a href="<?php echo INCLUDE_PATH; ?>">
+					<i class="fab fa-gg-circle"></i>
+				</a>
+			</div>
 			<!--logo-->
 			<nav class="desktop rigth">
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Sobre</a></li>
-					<li><a href="">Serviços</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
 			<nav class="mobile rigth">
@@ -31,10 +35,10 @@
 					<i class="fas fa-bars"></i>
 				</div>
 				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Sobre</a></li>
-					<li><a href="">Serviços</a></li>
-					<li><a href="">Contato</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+					<li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
 				</ul>
 			</nav>
 			<div class="clear"></div>
@@ -84,7 +88,7 @@
 			</div>
 			<div class="w50 left">
 				<!-- pegar imagem depois -->
-				<img class="rigth" src="images/author.jpg" alt="">
+				<img class="rigth" src="<?php echo INCLUDE_PATH; ?>images/author.jpg" alt="">
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -247,7 +251,7 @@
 			<p>Todos os direitos reservados</p>
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/jquery.js" ></script>
-	<script src="js/scripts.js" ></script>
+	<script type="text/javascript" src="<?php echo INCLUDE_PATH; ?>js/jquery.js" ></script>
+	<script src="<?php echo INCLUDE_PATH; ?>js/scripts.js" ></script>
 </body>
 </html>
