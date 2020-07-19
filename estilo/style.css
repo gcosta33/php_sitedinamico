@@ -7,6 +7,10 @@
 
 
 /* Boot CSS */
+html,body{
+    overflow-x: hidden;
+    height: 100%;
+}
 
 img{
     width: 100%;
@@ -238,6 +242,17 @@ footer p{
     text-align: center;
     font-weight: 400;
     font-size: 15px
+}
+section.erro-404{
+    min-height: calc(100vh - 149px);
+    
+}
+.erro-404 h2{
+    text-align: center;
+    line-height: 50vh;
+    color: #333;
+    font-weight: 400;
+    font-size: 20px;
 }
 /* REGRAS RESPONSIVO */
 @media screen and (max-width: 768px){
